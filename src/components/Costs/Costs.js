@@ -22,17 +22,6 @@ const Costs = (props) => {
     }
   });
 
-  // let costsContent = <p>В этом году нет товаров</p>;
-  // if(filteredCosts.length > 0){
-  //   costsContent = filteredCosts.map((cost) => (
-  //     <CostItem
-  //       key={cost.id}
-  //       date={cost.date}
-  //       description={cost.description}
-  //       amount={cost.amount}
-  //     />
-  //   ))
-  // }
 
   return (
     <div>
@@ -40,7 +29,6 @@ const Costs = (props) => {
         <CostsFilter year={selectedYear} onChangeYear={changeYearHandler} />
         <CostsDiagram costs={filteredCosts}/>
         <CostList costs={filteredCosts}/>
-        {/* {costsContent} */}
       </Card>
     </div>
   );

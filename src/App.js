@@ -3,6 +3,7 @@ import Costs from "./components/Costs/Costs";
 import Info from "./components/Info";
 import NewCost from "./components/NewCost/NewCost";
 
+
 const INITIAL_COSTS = [
   {
     date: new Date(2021, 2, 12),
@@ -30,10 +31,13 @@ const App = () => {
 
   const addCostHandler = (cost) => {
     setCosts(prevCosts => {
-      console.log([cost, ...prevCosts]);
-      return [cost, ...prevCosts];
+      
+     return [cost, ...prevCosts];
+      
     })
   };
+
+
 
   return (
     <div>
